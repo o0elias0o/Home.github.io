@@ -199,7 +199,6 @@ function loadWidget(waifuPath, apiPath) {
 	function loadRandModel() {
 		var modelId = localStorage.getItem("modelId"),
 			modelTexturesId = localStorage.getItem("modelTexturesId");
-			console.log(modelId,modelTexturesId);
 		// 可选 "rand"(随机), "switch"(顺序)
 		fetch(`${apiPath}/rand_textures/?id=${modelId}-${modelTexturesId}`)
 			.then(response => response.json())
